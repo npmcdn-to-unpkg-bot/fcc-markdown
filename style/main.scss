@@ -2,6 +2,7 @@
 
 $backgroundColor: #f0f5f9;
 $textColor: #1e2022;
+$lightColor: #52616a;
 $break-large: 1000px;
 
 // * {
@@ -55,9 +56,10 @@ body {
     width: 90%;
     height: 80%;
     resize: none;
-    font-size: 1.2rem;
-    border: 1px solid #52616a;
+    font-size: 1.2em;
+    border: 1px solid $lightColor;
     border-radius: 5px;
+    color: $lightColor;
     @media screen and (max-width: $break-large) {
         height: 100%;
         width: 100%;

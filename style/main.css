@@ -44,9 +44,10 @@ body {
   width: 90%;
   height: 80%;
   resize: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   border: 1px solid #52616a;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: #52616a; }
   @media screen and (max-width: 1000px) {
     .inputField {
       height: 100%;
