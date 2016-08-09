@@ -12,7 +12,7 @@ html {
 body {
   background-color: #f0f5f9;
   color: #1e2022;
-  padding: 5rem 2rem;
+  padding: 1rem 2rem;
   line-height: 2rem; }
 
 .field {
@@ -21,6 +21,10 @@ body {
   @media screen and (max-width: 1000px) {
     .field {
       display: block; } }
+
+.gitLink {
+  text-align: center;
+  margin-bottom: 3rem; }
 
 .layout {
   width: 100%;
