@@ -17,12 +17,12 @@
     <script type="text/babel">
 
     class Layout extends React.Component {
+
       constructor() {
         super();
-        this.state = {content: "output"}
+        this.state = {content: ""}
       }
       changeContent(content) {
-        // console.log("changeContent fired");
         this.setState({content});
       }
 
@@ -30,7 +30,7 @@
         return (
           <div className="layout">
           <InputField changeContent={this.changeContent.bind(this)} content={this.state.content} />
-          <OutputField content={this.state.content} />
+          <OutputField content={this.state.content}/>
           </div>
         );
       }
@@ -53,10 +53,14 @@
     }
 
     class OutputField extends React.Component {
+      markup(content) {
+        const markup = marked(content);
+        return {__html: markup};
+      }
       render() {
         return (
           <div className="outputField">
-          {this.props.content}
+          <span dangerouslySetInnerHTML={this.markup(this.props.content)} />
           </div>
         )
       }
