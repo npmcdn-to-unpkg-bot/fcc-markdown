@@ -38,7 +38,9 @@ body {
   padding: 1rem;
   width: 90%;
   height: 80%;
-  resize: none; }
+  resize: none;
+  font-size: 1.2rem;
+  border-radius: 5px; }
   @media screen and (max-width: 1000px) {
     .inputField {
       height: 100%;
