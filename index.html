@@ -17,20 +17,36 @@
     <script type="text/babel">
 
     class Layout extends React.Component {
+      constructor() {
+        super();
+        this.state = {content: "output"}
+      }
+      changeContent(content) {
+        // console.log("changeContent fired");
+        this.setState({content});
+      }
+
       render() {
         return (
           <div className="layout">
-          <InputField />
-          <OutputField />
+          <InputField changeContent={this.changeContent.bind(this)} content={this.state.content} />
+          <OutputField content={this.state.content} />
           </div>
         );
       }
     }
 
     class InputField extends React.Component {
+
+      handleChange(e) {
+        const content = e.target.value;
+        this.props.changeContent(content);
+      }
+
       render() {
+        const placeholder = "Enter your Markdown here...";
         return (
-          <textarea className="inputField" rows="10" cols="50" autofocus placeholder="Enter your Markdown here...">
+          <textarea className="inputField" rows="10" cols="50" autoFocus placeholder={placeholder} onChange={this.handleChange.bind(this)}>
           </textarea>
         );
       }
@@ -40,6 +56,7 @@
       render() {
         return (
           <div className="outputField">
+          {this.props.content}
           </div>
         )
       }
