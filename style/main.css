@@ -24,7 +24,7 @@ body {
 
 .gitLink {
   text-align: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .layout {
   width: 100%;
@@ -60,5 +60,9 @@ body {
       margin: 2rem 1rem;
       width: 100%;
       height: auto; } }
+
+.title {
+  font-size: 2rem;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
