@@ -29,12 +29,10 @@
 
       render() {
         return (
-          <div>
-          <Header />
           <div className="layout">
+          <Header />
           <InputField changeContent={this.changeContent.bind(this)} content={this.state.content} />
           <OutputField content={this.state.content}/>
-          </div>
           </div>
         );
       }
