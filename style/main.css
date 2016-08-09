@@ -56,7 +56,8 @@ body {
   list-style-position: inside;
   list-style: disc;
   width: 50%;
-  vertical-align: top; }
+  vertical-align: top;
+  padding-top: 2em; }
   @media screen and (max-width: 1000px) {
     .outputField {
       margin: 2rem 1rem;
