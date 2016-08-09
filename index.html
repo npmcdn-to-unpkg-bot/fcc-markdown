@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <title>Markdown Previewer</title>
     <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/main.css" />
     <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
@@ -61,6 +62,9 @@
         const placeholder = "Enter your Markdown here...";
         return (
           <div className="inputDiv field">
+          <div>
+          <a href="https://en.wikipedia.org/wiki/Markdown#Example" target="_blank">Markdown syntax on Wikipedia</a>
+          </div>
           <textarea className="inputField" rows="10" cols="50" autoFocus placeholder={placeholder} onChange={this.handleChange.bind(this)} >
           </textarea>
           </div>
