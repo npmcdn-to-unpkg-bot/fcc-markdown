@@ -14,7 +14,42 @@
 
 <body>
   <div id="app"><div>
+    <script type="text/babel">
 
+    class Layout extends React.Component {
+      render() {
+        return (
+          <div className="layout">
+          <InputField />
+          <OutputField />
+          </div>
+        );
+      }
+    }
+
+    class InputField extends React.Component {
+      render() {
+        return (
+          <textarea className="inputField" rows="10" cols="50" autofocus placeholder="Enter your Markdown here...">
+          </textarea>
+        );
+      }
+    }
+
+    class OutputField extends React.Component {
+      render() {
+        return (
+          <div className="outputField">
+          </div>
+        )
+      }
+    }
+
+    ReactDOM.render(
+      <Layout />, document.getElementById('app')
+    );
+
+    </script>
 </body>
 
 </html>
