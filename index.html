@@ -29,9 +29,12 @@
 
       render() {
         return (
+          <div>
+          <Header />
           <div className="layout">
           <InputField changeContent={this.changeContent.bind(this)} content={this.state.content} />
           <OutputField content={this.state.content}/>
+          </div>
           </div>
         );
       }
@@ -42,7 +45,7 @@
         const gitLink = "https://github.com/jenovs/fcc-markdown";
         return (
           <header className="gitLink">
-          <a href={gitLink}>Source code on GitHub</a>
+          <a href={gitLink} target="_blank">Source code on GitHub</a>
           </header>
         )
       }
