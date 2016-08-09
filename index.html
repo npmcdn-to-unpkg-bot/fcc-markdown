@@ -35,7 +35,7 @@
         );
       }
     }
-
+    
     class InputField extends React.Component {
 
       handleChange(e) {
@@ -46,8 +46,10 @@
       render() {
         const placeholder = "Enter your Markdown here...";
         return (
+          <div className="inputDiv field">
           <textarea className="inputField" rows="10" cols="50" autoFocus placeholder={placeholder} onChange={this.handleChange.bind(this)}>
           </textarea>
+          </div>
         );
       }
     }
@@ -59,7 +61,7 @@
       }
       render() {
         return (
-          <div className="outputField">
+          <div className="outputField field">
           <span dangerouslySetInnerHTML={this.markup(this.props.content)} />
           </div>
         )

@@ -1,1 +1,67 @@
 @import "reset";
+
+$backgroundColor: #f0f5f9;
+$textColor: #1e2022;
+$break-large: 1000px;
+
+// * {
+//     border: 1px dotted red;
+// }
+
+#app,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+    padding: 5rem 2rem;
+    line-height: 2rem;
+}
+
+.field {
+    height: 100%;
+    display: inline-block;
+    @media screen and (max-width: $break-large) {
+        display: block;
+    }
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+}
+
+.inputDiv {
+    width: 50%;
+    height: 100%;
+    @media screen and (max-width: $break-large) {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.inputField {
+    padding: 1rem;
+    width: 90%;
+    height: 80%;
+    resize: none;
+    @media screen and (max-width: $break-large) {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.outputField {
+    list-style-position: inside;
+    width: 50%;
+    vertical-align: top;
+    @media screen and (max-width: $break-large) {
+      margin: 2rem 1rem;
+        width: 100%;
+        height: auto;
+    }
+}
