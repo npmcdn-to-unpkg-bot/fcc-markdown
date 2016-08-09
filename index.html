@@ -37,6 +37,17 @@
       }
     }
 
+    class Header extends React.Component {
+      render() {
+        const gitLink = "https://github.com/jenovs/fcc-markdown";
+        return (
+          <header className="gitLink">
+          <a href={gitLink}>Source code on GitHub</a>
+          </header>
+        )
+      }
+    }
+
     class InputField extends React.Component {
 
       handleChange(e) {
