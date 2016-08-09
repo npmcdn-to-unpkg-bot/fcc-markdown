@@ -17,42 +17,6 @@
   <div id="app"><div>
     <script type="text/babel">
 
-    const sample = `
-    Heading
-    =======
-
-    Sub-heading
-    -----------
-
-    ### Another deeper heading
-
-    Paragraphs are separated
-    by a blank line.
-
-    Leave 2 spaces at the end of a line to do a
-    line break
-
-    Text attributes *italic*, **bold**,
-    \`monospace\`, ~~strikethrough~~ .
-
-    Shopping list:
-
-      * apples
-      * oranges
-      * pears
-
-    Numbered list:
-
-      1. apples
-      2. oranges
-      3. pears
-
-    The rain---not the reign---in
-    Spain.
-
-     *[Herman Fassett](https://freecodecamp.com/hermanfassett)*
-`;
-
     class Layout extends React.Component {
 
       constructor() {
@@ -84,7 +48,7 @@
         const placeholder = "Enter your Markdown here...";
         return (
           <div className="inputDiv field">
-          <textarea className="inputField" rows="10" cols="50" autoFocus placeholder={sample} onChange={this.handleChange.bind(this)} >
+          <textarea className="inputField" rows="10" cols="50" autoFocus placeholder={placeholder} onChange={this.handleChange.bind(this)} >
           </textarea>
           </div>
         );
